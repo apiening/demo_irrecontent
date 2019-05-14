@@ -1,0 +1,15 @@
+
+config.tx_extbase {
+  persistence {
+    classes {
+
+      Demo\DemoIrrecontent\Domain\Model\Ttcontent {
+        mapping {
+          tableName = tt_content
+          recordType = Tx_DemoIrrecontent_Ttcontent
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-05-10T08:48:27Z" product-name="demo_irrecontent">
+		<header/>
+		<body>
+			<trans-unit id="tx_demoirrecontent_domain_model_mymodel">
+				<source>My Model</source>
+			</trans-unit>
+			<trans-unit id="tx_demoirrecontent_domain_model_mymodel.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_demoirrecontent_domain_model_mymodel.content_elements">
+				<source>Content Elements</source>
+			</trans-unit>
+			<trans-unit id="tx_demoirrecontent_domain_model_ttcontent">
+				<source>Ttcontent</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DemoIrrecontent_Ttcontent">
+				<source>Demo tt_content IRRE relations Ttcontent</source>
+			</trans-unit>
+			<trans-unit id="tx_demo_irrecontent_list.name">
+				<source>List MyModel entries</source>
+			</trans-unit>
+			<trans-unit id="tx_demo_irrecontent_list.description">
+				<source></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
