@@ -34,7 +34,7 @@ if (!isset($GLOBALS['TCA']['tt_content']['ctrl']['type'])) {
 
 if (isset($GLOBALS['TCA']['tt_content']['types']['1']['showitem'])) {
     $GLOBALS['TCA']['tt_content']['types']['Tx_DemoIrrecontent_Ttcontent']['showitem'] = $GLOBALS['TCA']['tt_content']['types']['1']['showitem'];
-} elseif (is_array($GLOBALS['TCA']['tt_content']['types'])) {
+} elseif(is_array($GLOBALS['TCA']['tt_content']['types'])) {
     // use first entry in types array
     $tt_content_type_definition = reset($GLOBALS['TCA']['tt_content']['types']);
     $GLOBALS['TCA']['tt_content']['types']['Tx_DemoIrrecontent_Ttcontent']['showitem'] = $tt_content_type_definition['showitem'];
@@ -45,22 +45,3 @@ $GLOBALS['TCA']['tt_content']['types']['Tx_DemoIrrecontent_Ttcontent']['showitem
 $GLOBALS['TCA']['tt_content']['types']['Tx_DemoIrrecontent_Ttcontent']['showitem'] .= '';
 
 $GLOBALS['TCA']['tt_content']['columns'][$GLOBALS['TCA']['tt_content']['ctrl']['type']]['config']['items'][] = ['LLL:EXT:demo_irrecontent/Resources/Private/Language/locallang_db.xlf:tt_content.tx_extbase_type.Tx_DemoIrrecontent_Ttcontent','Tx_DemoIrrecontent_Ttcontent'];
-
-
-$temporaryColumn = array(
-    'mymodel' => array(
-        'exclude' => 1,
-        'label' => 'tx_demoirrecontent_domain_model_mymodel',
-        'config' => array(
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'foreign_table' => 'tx_demoirrecontent_domain_model_mymodel',
-            'minitems' => 0,
-            'maxitems' => 1,
-        )
-    )
-);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
-    'tt_content',
-    $temporaryColumn
-);

@@ -57,17 +57,3 @@ plugin.tx_demoirrecontent._CSS_DEFAULT_STYLE (
         color:green;
     }
 )
-
-plugin.tx_demoirrecontent {
-    persistence {
-        classes {
-            Demo\DemoIrrecontent\Domain\Model\Ttcontent {
-                mapping {
-                    tableName = tt_content
-                    columns {
-                    }
-                }
-            }
-        }
-    }
-}

@@ -85,7 +85,7 @@
                     "addDeletedField": true,
                     "addHiddenField": true,
                     "addStarttimeEndtimeFields": true,
-                    "aggregateRoot": false,
+                    "aggregateRoot": true,
                     "categorizable": false,
                     "description": "",
                     "mapToTable": "tt_content",
@@ -120,8 +120,8 @@
         },
         "extensionKey": "demo_irrecontent",
         "name": "Demo tt_content IRRE relations",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "originalExtensionKey": "demo_irrecontent",
+        "originalVendorName": "Demo",
         "persons": [],
         "plugins": [
             {
@@ -152,7 +152,7 @@
         }
     ],
     "log": {
-        "last_modified": "2019-05-10 08:48",
+        "last_modified": "2019-05-16 09:05",
         "extension_builder_version": "9.10.0",
         "be_user": " (1)"
     }

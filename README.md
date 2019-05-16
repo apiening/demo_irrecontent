@@ -18,3 +18,9 @@ When you hit the front end with a plugin of type `list` from this extension, you
 There is also a `Extbase Variable Dump` showing up with an entry `myModels` which holds the entries including the `name`-field, but the relation `contentElements` is not resolved. It holds an empty object of type `TYPO3\CMS\Extbase\Persistence\ObjectStorage`.
 
 What can I do to get the relation to tt_content fetched in order to get access to the UIDs of the assigned CEs?
+
+# Update
+After filling the relevant fields in the `Ttcontent` model and updating the persistence mapping in `ext_typoscript_setup.txt` the relation to tt_content is fetched.
+This issue is finally solved now. Thanks to all contributors from the TYPO3 community that provided hints and the missing parts in the slack support channels.
+
+I'll leave this repository available here in case someone is facing the same issues like me.
